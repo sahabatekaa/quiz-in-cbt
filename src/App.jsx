@@ -33,11 +33,146 @@ const appId = typeof __app_id !== 'undefined' ? __app_id : 'cbt-smp-local';
 // 2. DEFAULT QUESTIONS TEMPLATE (JSON)
 // ==========================================
 const DEFAULT_QUESTIONS = [
-  { id: 21, type: "PG", q: "Siapakah Khalifah pertama setelah wafatnya Rasulullah SAW?", a: ["Abu Bakar Ash-Shiddiq", "Umar bin Khattab", "Utsman bin Affan", "Ali bin Abi Thalib"], correct: 0 },
-  { id: 22, type: "PG", q: "Malaikat yang bertugas menyampaikan wahyu kepada para Nabi dan Rasul adalah...", a: ["Malaikat Mikail", "Malaikat Jibril", "Malaikat Israfil", "Malaikat Izrail"], correct: 1 },
-  { id: 23, type: "PG", q: "Puasa Ramadhan mulai diwajibkan bagi umat Islam pada tahun ke-... Hijriyah.", a: ["Satu", "Dua", "Tiga", "Empat"], correct: 1 },
-  { id: 24, type: "PG", q: "Di antara sifat wajib bagi Rasul adalah 'Fathanah', yang artinya...", a: ["Dapat dipercaya", "Menyampaikan", "Jujur / Benar", "Cerdas / Pintar"], correct: 3 },
-  { id: 25, type: "PG", q: "Surah dalam Al-Qur'an yang disebut sebagai 'Ummul Qur'an' (Induk Al-Qur'an) adalah...", a: ["Surah Yasin", "Surah Al-Baqarah", "Surah Al-Fatihah", "Surah Al-Ikhlas"], correct: 2 }
+  { 
+    id: 1, 
+    type: "PG", 
+    q: "Kata yang bermakna 'Yang' untuk laki-laki tunggal (Isim Mausul) adalah...", 
+    a: ["Huwa (هُوَ)", "Alladzi (الَّذِي)", "Allati (الَّتِي)", "Anta (أَنْتَ)"], 
+    correct: 1 
+  },
+  { 
+    id: 2, 
+    type: "PG", 
+    q: "Kata yang bermakna 'Yang' untuk perempuan tunggal (Isim Mausul) adalah...", 
+    a: ["Nahnu (نَحْنُ)", "Hiya (هِيَ)", "Alladzi (الَّذِي)", "Allati (الَّتِي)"], 
+    correct: 3 
+  },
+  { 
+    id: 3, 
+    type: "PG", 
+    q: "'Bacalah!' dalam bahasa Arab (Fi'il Amar) adalah...", 
+    a: ["Ijlis (اِجْلِسْ)", "Idzhab (اِذْهَبْ)", "Iqra' (اِقْرَأْ)", "Uktub (اُكْتُبْ)"], 
+    correct: 2 
+  },
+  { 
+    id: 4, 
+    type: "PG", 
+    q: "'Tulislah!' dalam bahasa Arab (Fi'il Amar) adalah...", 
+    a: ["Uktub (اُكْتُبْ)", "Iqra' (اِقْرَأْ)", "Isma' (اِسْمَعْ)", "Kul (كُلْ)"], 
+    correct: 0 
+  },
+  { 
+    id: 5, 
+    type: "PG", 
+    q: "Manakah di bawah ini yang termasuk kata perintah (Fi'il Amar)?", 
+    a: ["Sedang duduk", "Tempat duduk", "Duduklah!", "Dia duduk"], 
+    correct: 2 
+  },
+  { 
+    id: 6, 
+    type: "PG", 
+    q: "Isim Mausul biasanya digunakan untuk...", 
+    a: ["Menunjuk benda", "Melarang seseorang", "Menanyakan sesuatu", "Menyambungkan dua kalimat"], 
+    correct: 3 
+  },
+  { 
+    id: 7, 
+    type: "PG", 
+    q: "'Masuklah!' bahasa Arabnya adalah...", 
+    a: ["Iftah (اِفْتَحْ)", "Udkhul (اُدْخُلْ)", "Ukhruj (اُخْرُجْ)", "Ighliq (اِغْلِقْ)"], 
+    correct: 1 
+  },
+  { 
+    id: 8, 
+    type: "PG", 
+    q: "'Keluarlah!' bahasa Arabnya adalah...", 
+    a: ["Qum (قُمْ)", "Nam (نَمْ)", "Udkhul (اُدْخُلْ)", "Ukhruj (اُخْرُجْ)"], 
+    correct: 3 
+  },
+  { 
+    id: 9, 
+    type: "PG", 
+    q: "Kata 'Alladziina (الَّذِينَ)' adalah Isim Mausul yang digunakan untuk...", 
+    a: ["Perempuan banyak", "Laki-laki tunggal", "Laki-laki banyak/jamak", "Perempuan tunggal"], 
+    correct: 2 
+  },
+  { 
+    id: 10, 
+    type: "PG", 
+    q: "'Dengarkanlah!' bahasa Arabnya adalah...", 
+    a: ["Iqra' (اِقْرَأْ)", "Unzhur (اُنْظُرْ)", "Ijlis (اِجْلِسْ)", "Isma' (اِسْمَعْ)"], 
+    correct: 3 
+  },
+  { 
+    id: 11, 
+    type: "PG", 
+    q: "Kata perintah (Fi'il Amar) biasanya digunakan saat kita ingin...", 
+    a: ["Menyebutkan nama benda", "Bertanya kabar", "Bercerita masa lalu", "Menyuruh seseorang melakukan sesuatu"], 
+    correct: 3 
+  },
+  { 
+    id: 12, 
+    type: "PG", 
+    q: "'Bukalah!' bahasa Arabnya adalah...", 
+    a: ["Irji' (اِرْجِعْ)", "Iftah (اِفْتَحْ)", "Ighliq (اِغْلِقْ)", "Idzhab (اِذْهَبْ)"], 
+    correct: 1 
+  },
+  { 
+    id: 13, 
+    type: "PG", 
+    q: "'Tutuplah!' bahasa Arabnya adalah...", 
+    a: ["Imsah (اِمْسَحْ)", "Uktub (اُكْتُبْ)", "Ighliq (اِغْلِقْ)", "Iftah (اِفْتَحْ)"], 
+    correct: 2 
+  },
+  { 
+    id: 14, 
+    type: "PG", 
+    q: "Jika guru menyuruh murid laki-laki untuk berdiri, ia akan berkata...", 
+    a: ["Kul (كُلْ)", "Ijlis (اِجْلِسْ)", "Nam (نَمْ)", "Qum (قُمْ)"], 
+    correct: 3 
+  },
+  { 
+    id: 15, 
+    type: "PG", 
+    q: "Kata 'Allaati (اللَّاتِي)' adalah isim mausul untuk...", 
+    a: ["Satu perempuan", "Laki-laki banyak", "Perempuan banyak/jamak", "Satu laki-laki"], 
+    correct: 2 
+  },
+  { 
+    id: 16, 
+    type: "PG", 
+    q: "'Alladzaani (اللَّذَانِ)' adalah isim mausul untuk...", 
+    a: ["Dua perempuan", "Satu laki-laki", "Satu perempuan", "Dua laki-laki"], 
+    correct: 3 
+  },
+  { 
+    id: 17, 
+    type: "PG", 
+    q: "Ciri utama dari Fi'il Amar (kata perintah) adalah harakat akhirnya biasanya...", 
+    a: ["Sukun (mati)", "Dhammah (u)", "Fathah (a)", "Kasrah (i)"], 
+    correct: 0 
+  },
+  { 
+    id: 18, 
+    type: "PG", 
+    q: "'Ambillah!' bahasa Arabnya adalah...", 
+    a: ["Hat (هَاتِ)", "Khudz (خُذْ)", "Ta'al (تَعَالَ)", "Da' (دَعْ)"], 
+    correct: 1 
+  },
+  { 
+    id: 19, 
+    type: "PG", 
+    q: "'Makanlah!' bahasa Arabnya adalah...", 
+    a: ["Nam (نَمْ)", "Qum (قُمْ)", "Isyrab (اِشْرَبْ)", "Kul (كُلْ)"], 
+    correct: 3 
+  },
+  { 
+    id: 20, 
+    type: "PG", 
+    q: "Kalimat: 'Ini adalah siswa (laki-laki) ___ rajin.' Kata hubung yang tepat adalah...", 
+    a: ["Allaati (اللَّاتِي)", "Alladzina (الَّذِينَ)", "Alladzi (الَّذِي)", "Allati (الَّتِي)"], 
+    correct: 2 
+  }
 ];
 
 // ==========================================
