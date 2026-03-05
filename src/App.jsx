@@ -423,7 +423,7 @@ const App = () => {
                   <label className={`block text-xs font-bold mb-2 uppercase tracking-wider ${isDarkMode ? 'text-slate-400' : 'text-slate-500'}`}>Kelas</label>
                   <select required value={user.class} onChange={(e) => setUser({...user, class: e.target.value})} className={`w-full p-4 rounded-2xl outline-none transition-all border-2 appearance-none ${isDarkMode ? 'bg-slate-900/50 border-slate-700 focus:border-emerald-500 text-white' : 'bg-white/50 border-white focus:border-emerald-500 focus:bg-white text-slate-800'}`}>
                     <option value="" disabled>Pilih Kelas</option>
-                    <option value="9A">Kelas 9 A1</option><option value="9B">Kelas 9A2</option>
+                    <option value="9A">Kelas 9A1</option><option value="9B">Kelas 9A2</option>
                   </select>
                 </div>
                 <div>
