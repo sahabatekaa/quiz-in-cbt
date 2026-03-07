@@ -36,141 +36,141 @@ const DEFAULT_QUESTIONS = [
   { 
     id: 1, 
     type: "PG", 
-    q: "Kata yang bermakna 'Yang' untuk laki-laki tunggal (Isim Mausul) adalah...", 
-    a: ["Huwa (هُوَ)", "Alladzi (الَّذِي)", "Allati (الَّتِي)", "Anta (أَنْتَ)"], 
+    q: "Campuran antara warna merah dan kuning akan menghasilkan warna...", 
+    a: ["Hijau", "Jingga", "Ungu", "Cokelat"], 
     correct: 1 
   },
   { 
     id: 2, 
     type: "PG", 
-    q: "Kata yang bermakna 'Yang' untuk perempuan tunggal (Isim Mausul) adalah...", 
-    a: ["Nahnu (نَحْنُ)", "Hiya (هِيَ)", "Alladzi (الَّذِي)", "Allati (الَّتِي)"], 
+    q: "Tari Kecak merupakan tarian tradisional yang berasal dari daerah...", 
+    a: ["Sumatera Barat", "Jawa Timur", "Sulawesi Selatan", "Bali"], 
     correct: 3 
   },
   { 
     id: 3, 
     type: "PG", 
-    q: "'Bacalah!' dalam bahasa Arab (Fi'il Amar) adalah...", 
-    a: ["Ijlis (اِجْلِسْ)", "Idzhab (اِذْهَبْ)", "Iqra' (اِقْرَأْ)", "Uktub (اُكْتُبْ)"], 
-    correct: 2 
+    q: "Alat musik sasando yang berasal dari Nusa Tenggara Timur dimainkan dengan cara...", 
+    a: ["Dipetik", "Digesek", "Ditiup", "Dipukul"], 
+    correct: 0 
   },
   { 
     id: 4, 
     type: "PG", 
-    q: "'Tulislah!' dalam bahasa Arab (Fi'il Amar) adalah...", 
-    a: ["Uktub (اُكْتُبْ)", "Iqra' (اِقْرَأْ)", "Isma' (اِسْمَعْ)", "Kul (كُلْ)"], 
-    correct: 0 
+    q: "Lagu daerah 'Ampar-Ampar Pisang' berasal dari provinsi...", 
+    a: ["Maluku", "Sumatera Utara", "Kalimantan Selatan", "Kalimantan Barat"], 
+    correct: 2 
   },
   { 
     id: 5, 
     type: "PG", 
-    q: "Manakah di bawah ini yang termasuk kata perintah (Fi'il Amar)?", 
-    a: ["Sedang duduk", "Tempat duduk", "Duduklah!", "Dia duduk"], 
-    correct: 2 
+    q: "Unsur paling dasar dalam seni rupa dua dimensi yang menjadi awal terbentuknya suatu goresan adalah...", 
+    a: ["Bidang", "Garis", "Warna", "Titik"], 
+    correct: 3 
   },
   { 
     id: 6, 
     type: "PG", 
-    q: "Isim Mausul biasanya digunakan untuk...", 
-    a: ["Menunjuk benda", "Melarang seseorang", "Menanyakan sesuatu", "Menyambungkan dua kalimat"], 
-    correct: 3 
+    q: "Patung yang dibuat dengan tujuan untuk memperingati peristiwa bersejarah atau mengenang jasa pahlawan disebut patung...", 
+    a: ["Monumen", "Religi", "Dekorasi", "Arsitektur"], 
+    correct: 0 
   },
   { 
     id: 7, 
     type: "PG", 
-    q: "'Masuklah!' bahasa Arabnya adalah...", 
-    a: ["Iftah (اِفْتَحْ)", "Udkhul (اُدْخُلْ)", "Ukhruj (اُخْرُجْ)", "Ighliq (اِغْلِقْ)"], 
+    q: "Pencipta lagu kebangsaan 'Indonesia Raya' adalah...", 
+    a: ["Ismail Marzuki", "W.R. Supratman", "Ibu Sud", "C. Simanjuntak"], 
     correct: 1 
   },
   { 
     id: 8, 
     type: "PG", 
-    q: "'Keluarlah!' bahasa Arabnya adalah...", 
-    a: ["Qum (قُمْ)", "Nam (نَمْ)", "Udkhul (اُدْخُلْ)", "Ukhruj (اُخْرُجْ)"], 
+    q: "Tangga nada yang hanya terdiri dari lima nada pokok disebut tangga nada...", 
+    a: ["Diatonis", "Kromatis", "Melodis", "Pentatonis"], 
     correct: 3 
   },
   { 
     id: 9, 
     type: "PG", 
-    q: "Kata 'Alladziina (الَّذِينَ)' adalah Isim Mausul yang digunakan untuk...", 
-    a: ["Perempuan banyak", "Laki-laki tunggal", "Laki-laki banyak/jamak", "Perempuan tunggal"], 
-    correct: 2 
+    q: "Teknik melukis dengan menggunakan titik-titik warna untuk membentuk sebuah objek gambar disebut teknik...", 
+    a: ["Pointilis", "Dusel", "Akuarel", "Plakat"], 
+    correct: 0 
   },
   { 
     id: 10, 
     type: "PG", 
-    q: "'Dengarkanlah!' bahasa Arabnya adalah...", 
-    a: ["Iqra' (اِقْرَأْ)", "Unzhur (اُنْظُرْ)", "Ijlis (اِجْلِسْ)", "Isma' (اِسْمَعْ)"], 
-    correct: 3 
+    q: "Motif hias kain batik 'Mega Mendung' yang terkenal dengan bentuk awan-awannya berasal dari daerah...", 
+    a: ["Solo", "Cirebon", "Pekalongan", "Yogyakarta"], 
+    correct: 1 
   },
   { 
     id: 11, 
     type: "PG", 
-    q: "Kata perintah (Fi'il Amar) biasanya digunakan saat kita ingin...", 
-    a: ["Menyebutkan nama benda", "Bertanya kabar", "Bercerita masa lalu", "Menyuruh seseorang melakukan sesuatu"], 
+    q: "Pertunjukan teater tradisional yang berasal dari Jawa Timur dan sering menggunakan dialog yang spontan atau improvisasi adalah...", 
+    a: ["Lenong", "Ketoprak", "Makyong", "Ludruk"], 
     correct: 3 
   },
   { 
     id: 12, 
     type: "PG", 
-    q: "'Bukalah!' bahasa Arabnya adalah...", 
-    a: ["Irji' (اِرْجِعْ)", "Iftah (اِفْتَحْ)", "Ighliq (اِغْلِقْ)", "Idzhab (اِذْهَبْ)"], 
-    correct: 1 
+    q: "Alat musik angklung yang diakui sebagai warisan budaya dunia terbuat dari bahan dasar...", 
+    a: ["Bambu", "Rotan", "Logam", "Kayu"], 
+    correct: 0 
   },
   { 
     id: 13, 
     type: "PG", 
-    q: "'Tutuplah!' bahasa Arabnya adalah...", 
-    a: ["Imsah (اِمْسَحْ)", "Uktub (اُكْتُبْ)", "Ighliq (اِغْلِقْ)", "Iftah (اِفْتَحْ)"], 
-    correct: 2 
+    q: "Tari Saman dari Aceh sangat mengandalkan unsur...", 
+    a: ["Iringan alat musik tiup", "Kekompakan gerak dan tepukan", "Properti panggung", "Tata rias yang tebal"], 
+    correct: 1 
   },
   { 
     id: 14, 
     type: "PG", 
-    q: "Jika guru menyuruh murid laki-laki untuk berdiri, ia akan berkata...", 
-    a: ["Kul (كُلْ)", "Ijlis (اِجْلِسْ)", "Nam (نَمْ)", "Qum (قُمْ)"], 
-    correct: 3 
+    q: "Gambar yang dibuat dengan tujuan untuk memperjelas, menerangkan, atau menghiasi suatu teks/cerita disebut gambar...", 
+    a: ["Karikatur", "Ilustrasi", "Dekoratif", "Bentuk"], 
+    correct: 1 
   },
   { 
     id: 15, 
     type: "PG", 
-    q: "Kata 'Allaati (اللَّاتِي)' adalah isim mausul untuk...", 
-    a: ["Satu perempuan", "Laki-laki banyak", "Perempuan banyak/jamak", "Satu laki-laki"], 
+    q: "Jarak antara nada satu ke nada yang lain dalam ilmu musik sering disebut sebagai...", 
+    a: ["Tempo", "Birama", "Interval", "Melodi"], 
     correct: 2 
   },
   { 
     id: 16, 
     type: "PG", 
-    q: "'Alladzaani (اللَّذَانِ)' adalah isim mausul untuk...", 
-    a: ["Dua perempuan", "Satu laki-laki", "Satu perempuan", "Dua laki-laki"], 
+    q: "Berikut ini yang merupakan kelompok warna primer (warna dasar) murni adalah...", 
+    a: ["Merah, Hijau, Biru", "Kuning, Hijau, Ungu", "Merah, Hitam, Putih", "Merah, Kuning, Biru"], 
     correct: 3 
   },
   { 
     id: 17, 
     type: "PG", 
-    q: "Ciri utama dari Fi'il Amar (kata perintah) adalah harakat akhirnya biasanya...", 
-    a: ["Sukun (mati)", "Dhammah (u)", "Fathah (a)", "Kasrah (i)"], 
+    q: "Tarian yang hanya dibawakan atau dilakukan oleh seorang penari saja disebut tari...", 
+    a: ["Tunggal", "Kelompok", "Berpasangan", "Massal"], 
     correct: 0 
   },
   { 
     id: 18, 
     type: "PG", 
-    q: "'Ambillah!' bahasa Arabnya adalah...", 
-    a: ["Hat (هَاتِ)", "Khudz (خُذْ)", "Ta'al (تَعَالَ)", "Da' (دَعْ)"], 
+    q: "Proses pembuatan batik tradisional yang secara manual menggunakan malam (lilin) dan alat bernama canting disebut teknik batik...", 
+    a: ["Sablon", "Tulis", "Cap", "Celup ikat"], 
     correct: 1 
   },
   { 
     id: 19, 
     type: "PG", 
-    q: "'Makanlah!' bahasa Arabnya adalah...", 
-    a: ["Nam (نَمْ)", "Qum (قُمْ)", "Isyrab (اِشْرَبْ)", "Kul (كُلْ)"], 
-    correct: 3 
+    q: "Fungsi utama dari alat musik ritmis (seperti gendang, ketipung, tamborin) dalam sebuah ansambel adalah untuk...", 
+    a: ["Mengatur irama/tempo lagu", "Memberikan nada dasar", "Memainkan melodi utama", "Mengiringi penyanyi secara solo"], 
+    correct: 0 
   },
   { 
     id: 20, 
     type: "PG", 
-    q: "Kalimat: 'Ini adalah siswa (laki-laki) ___ rajin.' Kata hubung yang tepat adalah...", 
-    a: ["Allaati (اللَّاتِي)", "Alladzina (الَّذِينَ)", "Alladzi (الَّذِي)", "Allati (الَّتِي)"], 
+    q: "Kain tenun tradisional khas suku Batak dari Sumatera Utara yang sering digunakan dalam berbagai upacara adat disebut...", 
+    a: ["Songket", "Sasirangan", "Ulos", "Gringsing"], 
     correct: 2 
   }
 ];
